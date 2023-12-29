@@ -1,3 +1,5 @@
+## NAME : GOKUL SACHIN K
+## REGISTER NUMBER:23004843
 # Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
@@ -30,25 +32,50 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 #### Figure -02 FULL ADDER 
 
 ### Procedure
-
-Connect the supply (+5V) to the circuit
-Switch ON the main switch
-If the output is 1, then the led glows.
-### 
-Program:
-/*
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
-
-### Output:
+1.Use module projname(input,output) to start the Verilog programmming.
+2.Assign inputs and outputs using the word input and output respectively.
+3.Use defined keywords like wire,assign and required logic gates to represent the boolean expression.
+4.Use each output to represnt onre for differnce and the other for borrow. 5.End the verilog program using keyword endmodule
+### PROGRAM 
+## HALF ADDER
+```
+module halfadder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b)
+endmodule
+```
+## FULL ADDER
+```
+module halfadder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+xor(sum,a,b,c);
+assign carry=a&b | b&c | a&c
+endmodule
+```
 ### RTL
-### TIMING DIAGRAM
+## HALF ADDER:
+![HALF ADDER](https://github.com/vksachin2018/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149366019/5768fbe5-b14a-40b2-bd03-f25f247d790c)
 
+
+## FULL ADDER
+![FULL ADDER](https://github.com/vksachin2018/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149366019/c580d398-2152-490e-a413-ded5334d00eb)
 
 ### TRUTH TABLE 
+## HALF ADDER:
+![HALF ADDER TT](https://github.com/vksachin2018/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149366019/083501f6-0442-4bbe-b35e-7fed42533389)
+
+## FULL ADDER:
+![FULL ADDER TT](https://github.com/vksachin2018/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149366019/55674f58-32a3-4dad-982f-a5d313a3fa7f)
+
+## OUTPUT:
+## HALF ADDER:
+
+![HALF ADDER OUTPUT](https://github.com/vksachin2018/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149366019/047a73b6-dfdd-44e7-8af0-25e6e3e82651)
+
+## FULL ADDER:
+![FULL ADDER OUTPUT](https://github.com/vksachin2018/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149366019/fbd42dfb-acef-4729-93df-160689e26610)
 
 ### Result:

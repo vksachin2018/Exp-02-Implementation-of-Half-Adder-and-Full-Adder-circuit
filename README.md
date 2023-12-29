@@ -79,3 +79,4 @@ endmodule
 ![FULL ADDER OUTPUT](https://github.com/vksachin2018/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149366019/fbd42dfb-acef-4729-93df-160689e26610)
 
 ### Result:
+To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
